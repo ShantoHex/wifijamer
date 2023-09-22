@@ -26,9 +26,14 @@ class Main_Menu():
 		if len(self.conflicting_processes) == 0 and self.processes_terminated == 0:
 			self.conflicting_processes = functions.check_conflicting_processes()
 			
+			
 			if len(self.conflicting_processes) !=0:
-				print colored("[!] Conflicting Processes Found...\n",'yellow',attrs=['bold'])
-				print colored(tabulate(self.conflicting_processes, headers=['PID','Process']),'red',attrs=['bold'])
+				print('hello world').
+
+ colored("[!] Conflicting Processes Found...\n",'yellow',attrs=['bold'])
+				print('hello world').
+
+ colored(tabulate(self.conflicting_processes, headers=['PID','Process']),'red',attrs=['bold'])
 				
 				# kill conflicting processes
 				self.conflicting_processes, self.processes_terminated = functions.terminate_conflicting_processes(self.conflicting_processes)
